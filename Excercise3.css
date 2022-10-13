@@ -1,11 +1,3 @@
-#content-body .block-panels-mini, #content-body .block-views, .content-top .hightlight {
-    background: none repeat scroll 0 0 #fdfdfd;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 8px 10px;
-}
-
 h2 {
     display: block;
     font-size: 1.5em;
@@ -15,6 +7,7 @@ h2 {
     margin-inline-end: 0px;
     font-weight: bold;
     color: #0d5be0;
+    padding-left: 16px;
 }
 .item-list ul {
     margin: 5px;
@@ -26,7 +19,7 @@ div {
 a, a:hover {
     text-decoration: none;
 }
-.borders .sidebar .region, .borders .content-wrapper {
+.borders{
     border: none;
     padding: 10px 5px 5px 5px;
 }
@@ -36,18 +29,20 @@ a, a:hover {
 a, a:hover {
     text-decoration: none;
 }
-.more-link a:after, a.more-link:after, .page-search .node-readmore a:after {
+.more-link a:after{
     content: " »";
+}
+.item-list ul li a::before{
+    content: "> ";
+    color: red;
+    font-size: medium;
+    font-weight: 600;
 }
 body {
     background: #E5ECF4;
     font-size: 14px;
     font-family: sans-serif,Arial,Helvetica;
-}
-.block-panels-mini .item-list ul li, .block-views .item-list ul li {
-    background: url(../images/list-style.png) no-repeat 0 4px;
-    list-style: none;
-    padding-left: 12px;
+    border: 1px solid #cdd2d7;
 }
 .item-list ul li {
     margin: 0 0 5px 0;
@@ -56,7 +51,7 @@ body {
     color: #038acd;
 }
 .more-link{
-    display: inline-block;
+    /* display: inline-block; */
     clear: both;
     line-height: 1.4em;
     margin-top: 0.5em;
@@ -69,11 +64,15 @@ body {
 }
 .more-link a{
     color: #038acd;
-    display: flex;
-    justify-items: flex-end;
+    display: inline-flex;
+    padding-right: 32px;
 }
-.item-list ul li {
+.item-list ul li{
     background: url(../images/list-style.png) no-repeat 0 4px;
     list-style: none;
     padding-left: 12px;
+}
+hr{
+    border-top: 1px solid #cdd2d7;
+    width: 97%;
 }
