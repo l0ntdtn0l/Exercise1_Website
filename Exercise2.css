@@ -1,0 +1,14 @@
+.img-avatar{
+    height: 40%;
+    width: 100%;
+}
+.icon-star{
+    color: yellow;
+    list-style: none;
+}
+.info-list{
+    list-style: none;
+}
+.text-star{
+    color: black;
+}
